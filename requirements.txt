@@ -1,0 +1,15 @@
+torch
+numpy
+trimesh
+meshiki
+fpsample
+einops
+onnxruntime
+rembg
+kiui
+torchvision
+pymcubes
+tqdm
+opencv-python
+pymeshlab
+flash-attn --no-build-isolation
