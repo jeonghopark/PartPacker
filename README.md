@@ -64,6 +64,6 @@ This work is built on many amazing research works and open-source projects, than
   title={Efficient Part-level 3D Object Generation via Dual Volume Packing},
   author={Tang, Jiaxiang and Lu, Ruijie and Li, Zhaoshuo and Hao, Zekun and Li, Xuan and Wei, Fangyin and Song, Shuran and Zeng, Gang and Liu, Ming-Yu and Lin, Tsung-Yi},
   journal={arXiv preprint arXiv:2506.09980},
-  year={2024}
+  year={2025}
 }
 ```
