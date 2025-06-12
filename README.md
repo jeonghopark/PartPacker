@@ -2,7 +2,7 @@
 
 ![teaser](assets/teaser.gif)
 
-### [Project Page](https://research.nvidia.com/labs/dir/partpacker/) | [Arxiv](https://arxiv.org/abs/TODO) | [Models](https://huggingface.co/nvidia/PartPacker) | [Demo](https://huggingface.co/spaces/nvidia/PartPacker)
+### [Project Page](https://research.nvidia.com/labs/dir/partpacker/) | [Arxiv](https://arxiv.org/abs/2506.09980) | [Models](https://huggingface.co/nvidia/PartPacker) | [Demo](https://huggingface.co/spaces/nvidia/PartPacker)
 
 
 This is the official implementation of *PartPacker: Efficient Part-level 3D Object Generation via Dual Volume Packing*.
@@ -60,5 +60,10 @@ This work is built on many amazing research works and open-source projects, than
 ## Citation
 
 ```
-TODO
+@article{tang2024partpacker,
+  title={Efficient Part-level 3D Object Generation via Dual Volume Packing},
+  author={Tang, Jiaxiang and Lu, Ruijie and Li, Zhaoshuo and Hao, Zekun and Li, Xuan and Wei, Fangyin and Song, Shuran and Zeng, Gang and Liu, Ming-Yu and Lin, Tsung-Yi},
+  journal={arXiv preprint arXiv:2506.09980},
+  year={2024}
+}
 ```
