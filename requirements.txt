@@ -12,4 +12,5 @@ pymcubes
 tqdm
 opencv-python
 pymeshlab
+gradio
 flash-attn --no-build-isolation

@@ -36,6 +36,9 @@ PYTHONPATH=. python vae/scripts/infer.py --ckpt_path pretrained/vae.pt --input a
 
 # flow 3D generation from images
 PYTHONPATH=. python flow/scripts/infer.py --ckpt_path pretrained/flow.pt --input assets/images/ --output_dir output/
+
+# open local gradio app 
+python app.py
 ```
 
 
