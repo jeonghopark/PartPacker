@@ -135,6 +135,9 @@ def process_3d(
     mesh_part1 = postprocess_mesh(mesh_part1, target_num_faces)
     parts.extend(mesh_part1.split(only_watertight=False))
 
+    # some parts only have 1 face, seems a problem of trimesh.split.
+    parts = [part for part in parts if len(part.faces) > 10]
+
     # split connected components and assign different colors
     for j, part in enumerate(parts):
         # each component uses a random color
