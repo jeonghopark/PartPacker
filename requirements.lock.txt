@@ -12,3 +12,4 @@ tqdm == 4.67.0
 opencv-python == 4.10.0.84
 pymeshlab == 2023.12.post2
 gradio == 5.25.2
+transformers == 4.46.2
