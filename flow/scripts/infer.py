@@ -45,10 +45,10 @@ parser.add_argument("--input", type=str, help="input directory", default="assets
 parser.add_argument("--limit", type=int, help="limit number of images", default=-1)
 parser.add_argument("--output_dir", type=str, help="output directory", default="output/")
 parser.add_argument("--grid_res", type=int, help="grid resolution", default=384)
-parser.add_argument("--num_steps", type=int, help="number of cfg steps", default=30)
+parser.add_argument("--num_steps", type=int, help="number of cfg steps", default=50)
 parser.add_argument("--cfg_scale", type=float, help="cfg scale", default=7.0)
 parser.add_argument("--num_repeats", type=int, help="number of repeats per image", default=1)
-parser.add_argument("--num_faces", type=int, help="target number of faces for decimation", default=50000)
+parser.add_argument("--num_faces", type=int, help="target number of faces for decimation", default=-1)
 parser.add_argument("--seed", type=int, help="seed", default=42)
 args = parser.parse_args()
 

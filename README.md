@@ -15,6 +15,15 @@ We rely on `torch` with CUDA installed correctly.
 
 ```bash
 pip install -r requirements.txt
+
+# if you prefer fixed version of dependencies:
+pip install -r requirements.lock.txt
+
+# by default we use torch's built-in attention, if you want to explicitly use flash-attn:
+pip install flash-attn --no-build-isolation
+
+# if you want to run data processing and vae inference, please install meshiki:
+pip install meshiki
 ```
 
 ### Pretrained models
@@ -30,6 +39,8 @@ wget https://huggingface.co/nvidia/PartPacker/resolve/main/flow.pt
 
 ### Inference
 
+For inference, it takes ~16GB GPU memory (assuming float16).
+
 ```bash
 # vae reconstruction of meshes
 PYTHONPATH=. python vae/scripts/infer.py --ckpt_path pretrained/vae.pt --input assets/meshes/ --output_dir output/
@@ -37,7 +48,7 @@ PYTHONPATH=. python vae/scripts/infer.py --ckpt_path pretrained/vae.pt --input a
 # flow 3D generation from images
 PYTHONPATH=. python flow/scripts/infer.py --ckpt_path pretrained/flow.pt --input assets/images/ --output_dir output/
 
-# open local gradio app 
+# open local gradio app
 python app.py
 ```
 

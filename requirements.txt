@@ -1,7 +1,6 @@
 torch
 numpy
 trimesh
-meshiki
 fpsample
 einops
 onnxruntime
@@ -13,4 +12,3 @@ tqdm
 opencv-python
 pymeshlab
 gradio
-flash-attn --no-build-isolation
