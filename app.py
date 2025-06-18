@@ -218,11 +218,6 @@ def process_3d(
 
     data = {"cond_images": image_tensor}
 
-    # Automatically adjust grid_res for memory optimization in multi-GPU mode
-    if multi_gpu_enabled and grid_res > 384 and gpu_config['num_gpus'] < 2:
-        print(f"Adjusting grid_res from {grid_res} to 384 due to single GPU usage")
-        grid_res = 384
-
     if multi_gpu_enabled:
         # Multi-GPU processing
         results = model(data, num_steps=num_steps, cfg_scale=cfg_scale)
