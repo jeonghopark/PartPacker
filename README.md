@@ -11,7 +11,7 @@ Our model performs part-level 3D object generation from single-view images.
 
 ### Install
 
-We rely on `torch` with CUDA installed correctly.
+We rely on `torch` with CUDA installed correctly (tested with torch 2.5.1 + CUDA 12.1).
 
 ```bash
 pip install -r requirements.txt
