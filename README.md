@@ -39,7 +39,7 @@ wget https://huggingface.co/nvidia/PartPacker/resolve/main/flow.pt
 
 ### Inference
 
-For inference, it takes ~16GB GPU memory (assuming float16).
+For inference, it takes ~10GB GPU memory (assuming float16).
 
 ```bash
 # vae reconstruction of meshes
