@@ -9,7 +9,7 @@ This is the official implementation of *PartPacker: Efficient Part-level 3D Obje
 
 Our model performs part-level 3D object generation from single-view images.
 
-### Install
+### Installation
 
 We rely on `torch` with CUDA installed correctly (tested with torch 2.5.1 + CUDA 12.1).
 
@@ -25,6 +25,30 @@ pip install flash-attn --no-build-isolation
 # if you want to run data processing and vae inference, please install meshiki:
 pip install meshiki
 ```
+
+### Windows Installation
+It is confirmed to work on Python 3.10, with Cuda 12.4 and Torch 2.51 with TorchVision 0.20.1.
+
+It may work with other versions or combinations, but has been tested and confirm to work on NVidia 3090 and 4090 GPUs.
+
+- Install Python 3.10
+- Install Cuda 12.4
+- Git Clone the repository
+  - `git clone https://github.com/NVlabs/PartPacker`
+- Create a virtual environment inside the `PartPacker` directory
+- Activate the virtual environment
+- Install torch for your cuda version (12.4)
+  - `pip install torch==2.5.1 torchvision==0.20.1 torchaudio --index-url https://download.pytorch.org/whl/cu124`
+- Install requirements
+  - `pip install -r requirements.txt`
+
+### Running the GUI
+Run the app with `py app.py`
+
+It will auto-download the needed models and give you a URL for the gradio app in the console.
+
+![image](https://github.com/user-attachments/assets/205e1d08-fc8a-4041-9845-5a9ce9cfa5f8)
+
 
 ### Pretrained models
 
